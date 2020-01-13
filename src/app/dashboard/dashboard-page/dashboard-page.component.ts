@@ -15,7 +15,7 @@ export class DashboardPageComponent implements OnInit {
     this.activatedRoute.paramMap
       .pipe(
         tap((params: ParamMap) => {
-          this.pageNr = params.get('pageNr') as number;
+          this.pageNr = parseInt(params.get('pageNr'));
         })
       )
       .subscribe();
