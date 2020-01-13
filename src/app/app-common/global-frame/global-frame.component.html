@@ -4,10 +4,17 @@
   <h5>Navbar</h5>
 
   <ul>
-	  <li style="display: inline-block; padding: 5px;">
-      <a [routerLink]="['/dashboard']">Dashboard</a>
+	  <li style="display: inline-block; padding: 10px; vertical-align: top;">
+      <ul>
+        <li>
+          <a [routerLink]="['/dashboard']">Dashboard</a>
+        </li>
+        <li>
+          <a [routerLink]="['/dashboard', 'list']">Dashboard list</a>
+        </li>
+      </ul>
     </li>
-	  <li style="display: inline-block; padding: 5px;">
+	  <li style="display: inline-block; padding: 10px; vertical-align: top;">
       <a [routerLink]="['/other']">Sample page</a>
     </li>
   </ul>
